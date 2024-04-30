@@ -13,7 +13,7 @@ public class CurriculumJFrame {
         frame = new JFrame();
         frame.setTitle("Curriculum");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 600); // Set frame size
+        frame.setSize(800, 600); 
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
@@ -38,7 +38,6 @@ public class CurriculumJFrame {
 
     private JPanel createCoursePanel() {
         JPanel coursePanel = new JPanel(new GridBagLayout());
-        // Add course components here
         return coursePanel;
     }
 
@@ -66,13 +65,11 @@ public class CurriculumJFrame {
 
     private JPanel createSchedulePanel() {
         JPanel schedulePanel = new JPanel(new GridBagLayout());
-        // Add schedule components here
         return schedulePanel;
     }
 
     private JPanel createAdditionalFeaturesPanel() {
         JPanel additionalFeaturesPanel = new JPanel(new GridBagLayout());
-        // Add additional features components here
         return additionalFeaturesPanel;
     }
 
@@ -84,7 +81,7 @@ public class CurriculumJFrame {
         gbc.gridheight = gridheight;
         gbc.anchor = anchor;
         gbc.fill = fill;
-        gbc.insets = new Insets(5, 5, 5, 5); // Add some padding
+        gbc.insets = new Insets(5, 5, 5, 5);
         panel.add(component, gbc);
     }
 
