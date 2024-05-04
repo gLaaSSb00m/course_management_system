@@ -73,7 +73,7 @@ public class Login {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 1) { 
                     frame.dispose();
-                    Admin_Login admin_login= new Admin_Login();
+                    // Admin_Login admin_login= new Admin_Login();
                 }
             }
         });
@@ -116,5 +116,8 @@ public class Login {
             e.printStackTrace();
             return new Font("Arial", style, size);
         }
+    }
+    public static void main(String[] args) {
+        Login l = new Login();
     }
 }
